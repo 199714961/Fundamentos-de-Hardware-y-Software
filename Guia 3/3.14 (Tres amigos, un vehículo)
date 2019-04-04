@@ -1,0 +1,22 @@
+Proceso tres_amigos_un_vehiculo
+	Escribir "Ingrese precio del vehículo:";
+	Leer precio;
+	Escribir "Ingrese la cantidad aportada por el primer amigo:";
+	Leer primero;
+	Escribir "Ingrese la cantidad aportada por el segundo amigo:";
+	Leer seg;
+	Escribir "Ingrese la cantidad aportada por el tercer amigo:";
+	Leer tercero;
+	
+	porc_1<-(primero/precio)*100;
+	porc_2<-(seg/precio)*100;
+	porc_3<-(tercero/precio)*100;
+	
+	Escribir "El porcentaje de aporte del primer amigo fue de:",porc_1;
+	Escribir "El porcentaje de aporte del segundo amigo fue de:",porc_2;
+	Escribir "El porcentaje de aporte del tercer amigo fue de:",porc_3;
+	
+	
+	
+	
+FinProceso

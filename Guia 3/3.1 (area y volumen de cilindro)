@@ -1,0 +1,12 @@
+Proceso Vol_Area_Cilindro
+	Escribir "Por favor ingrese Radio:";
+	Leer Radio;
+	Escribir "Favor ingresar Altura::";
+	Leer Altura;
+	Area<-(PI*2)*Radio;
+	Volumen<-(Radio*Radio)*PI*Altura;
+	Escribir "El Area de su cilindro es:",Area;
+	Escribir "El Volumen de su cilindro es:",Volumen;
+	
+	
+FinProceso

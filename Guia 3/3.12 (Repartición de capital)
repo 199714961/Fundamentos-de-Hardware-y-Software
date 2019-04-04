@@ -1,0 +1,15 @@
+Proceso reparticion_presupuesto
+	Escribir "Ingrese el monto a repartir:";
+	Leer monto;
+	
+	porc_kine<-(20*monto)/100;
+	porc_gine<-(25*monto)/100;
+	porc_trauma<-(30*monto)/100;
+	porc_pedia<-(25*monto)/100;
+	
+	Escribir "La cantidad que le corresponde a Kinesiología es:",porc_kine;
+	Escribir "La cantidad que le corresponde a Ginecología es:",porc_gine;
+	Escribir "La cantidad que le corresponde a Traumatología es:",porc_trauma;
+	Escribir "La cantidad que le corresponde a Pediatría es:",porc_pedia;
+	
+FinProceso

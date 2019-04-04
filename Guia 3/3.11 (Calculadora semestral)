@@ -1,0 +1,49 @@
+Proceso calculo_segun_porcentaje
+	Escribir "Ingrese cantidad de calificaciones parciales: ";
+	Leer n_p;
+	acum_parciales<-0;
+	Para i<-1 Hasta n_p Con Paso 1 Hacer
+		Escribir "Ingrese nota:";
+		Leer n;
+		acum_parciales<-acum_parciales+n;
+	FinPara
+	promedio_parciales<-acum_parciales/n_p;
+	//
+	Escribir "Ingrese cantidad de calificaciones de talleres: ";
+	Leer n_t;
+	acum_talleres<-0;
+	Para h<-1 Hasta n_t Con Paso 1 Hacer
+		Escribir "Ingrese nota:";
+		Leer t;
+		acum_talleres<-acum_talleres+t;
+	FinPara
+	promedio_talleres<-acum_talleres/n_t;
+	//
+	Escribir "Ingrese cantidad de calificaciones de tareas: ";
+	Leer n_tareas;
+	acum_tareas<-0;
+	Para j<-1 Hasta n_tareas Con Paso 1 Hacer
+		Escribir "Ingrese nota:";
+		Leer tar;
+		acum_tareas<-acum_tareas+tar;
+	FinPara
+	promedio_tareas<-acum_tareas/n_tareas;
+	//
+	Escribir "Ingrese nota de exposición: ";
+	Leer promedio_expo;
+	
+	parciales<-(50/100)*promedio_parciales;
+	talleres<-(25/100)*promedio_talleres;
+	tareas<-(15/100)*promedio_tareas;
+	expo<-(10/100)*promedio_expo;
+	
+	calificacion_final<-parciales+talleres+tareas+expo;
+	
+	Escribir "Su calificación final es:",calificacion_final;
+	
+	
+	
+	
+	
+	
+FinProceso

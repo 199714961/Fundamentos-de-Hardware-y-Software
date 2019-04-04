@@ -1,0 +1,60 @@
+Proceso menu_restaurante
+	Escribir "(1)Completo italiano: $690";
+	Escribir "(2)Completo a la chilena: $890";
+	Escribir "(3)Hamburguesa-queso: $990";
+	Escribir "(4)Churrasco: $1100";
+	Escribir "(5)Cerveza: $700";
+	Escribir "(6)Bebida: $500";
+	
+	Escribir "Ingrese cuantos productos diferentes desea comprar:";
+	Leer num_prod;
+	
+	completoItaliano<-690;
+	completoChilena<-890;
+	Hamburguesa<-990;
+	Churrasco<-1100;
+	Cerveza<-700;
+	Bebida<-500;
+	
+	prec_prod<-0;
+	
+	acum<-0;
+	
+	Para i<-1 Hasta num_prod Con Paso 1 Hacer
+		Escribir "Por favor, ingrese el número de su pedido";
+		Leer pedido;
+		Si pedido==1 Entonces
+			prec_prod<-completoItaliano;
+		SiNo
+			Si pedido==2 Entonces
+				prec_prod<-completoChilena;
+			SiNo
+				Si pedido==3 Entonces
+					prec_prod<-Hamburguesa;
+				SiNo
+					Si pedido==4 Entonces
+						prec_prod<-Churrasco;
+					SiNo
+						Si pedido==5 Entonces
+							prec_prod<-Cerveza;
+						SiNo
+							Si pedido==6 Entonces
+								prec_prod<-Bebida;
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		Escribir "¿Cuantos/as va a querer?";
+		Leer cantidad;
+		
+		precio<-prec_prod*cantidad;
+		acum<-acum+precio;
+	FinPara
+	//El IVA es el 9% de su compra como monto extra
+	prec_IVA<-(acum*9)/100;
+	precio_real<-acum+prec_IVA;
+	Escribir "Estimado cliente, su precio real es ",acum,", sin embargo como debemos sumarle el IVA el precio queda en: ",precio_real;
+FinProceso
+

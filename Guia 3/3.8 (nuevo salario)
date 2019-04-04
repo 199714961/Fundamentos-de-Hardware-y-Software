@@ -1,0 +1,9 @@
+Proceso nuevo_salario
+	Escribir "Ingrese su salario:";
+	Leer salario;
+	incremento<-(salario*10)/100;
+	new_salario<-salario+incremento;
+	Escribir "Su nuevo salario es: ",new_salario;
+	
+	
+FinProceso

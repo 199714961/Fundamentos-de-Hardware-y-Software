@@ -1,0 +1,7 @@
+Proceso Dias_vividos
+	Dias<-365; 
+	Escribir "Favor, ingrese su edad:";
+	Leer Edad;
+	Dias_Usu<-Edad*Dias;
+	Escribir "Su edad en dias es:",Dias_Usu;
+FinProceso

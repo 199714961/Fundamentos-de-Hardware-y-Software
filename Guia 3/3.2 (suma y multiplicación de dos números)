@@ -1,0 +1,11 @@
+Proceso operaciones
+	Escribir "Ingrese el primer número:";
+	Leer primeroo;
+	Escribir "Ingrese el segundo número: ";
+	Leer segundoo;
+	mult<-primeroo*segundoo;
+	suma<-primeroo+segundoo;
+	Escribir "La suma de ambos numeros es:",suma;
+	Escribir "La multiplicación de ambos números es: ",mult;
+	
+FinProceso

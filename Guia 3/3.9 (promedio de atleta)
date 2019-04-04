@@ -1,0 +1,20 @@
+Proceso promedio_corredor
+	Escribir "INGRESE EL TIEMPO EN SEGUNDOS";
+	Escribir "Tiempo dia Lunes:";
+	Leer lunes;
+	Escribir "Tiempo dia martes:";
+	Leer martes;
+	Escribir "Tiempo dia miércoles:";
+	Leer miercoles;
+	Escribir "Tiempo dia jueves:";
+	Leer jueves;
+	Escribir "Tiempo dia viernes:";
+	Leer viernes;
+	Escribir "Tiempo dia sábado:";
+	Leer sabado;
+	
+	seg_totales<-lunes+martes+miercoles+jueves+viernes+sabado;
+	promedio<-seg_totales/6;
+	Escribir "Su promedio semanal fue de:",promedio," $egundos";
+	
+FinProceso

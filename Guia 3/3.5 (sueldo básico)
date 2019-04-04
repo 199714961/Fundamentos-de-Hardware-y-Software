@@ -1,0 +1,18 @@
+Proceso sueldo_basico
+	Escribir "Ingrese su sueldo básico: ";
+	Leer basic;
+	Escribir "Ingrese cuanto gana por hora extra:";
+	Leer dinero_hrs;
+	Escribir "Ingrese cuantas horas extra hizo:";
+	Leer hrs;
+	sueldo_total<-basic+(hrs*dinero_hrs);
+	porc_desc<-(sueldo_total*20)/100;
+	sueldo_real<-sueldo_total-porc_desc;
+	Escribir "Su sueldo base es:",basic;
+	Escribir "El total de descuento con un 20% es de:",porc_desc;
+	Escribir "Por ende su sueldo real es:",sueldo_real;
+	
+	Escribir "ATTE: La Afp";
+	
+	
+FinProceso

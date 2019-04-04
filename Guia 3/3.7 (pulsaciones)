@@ -1,0 +1,7 @@
+Proceso numero_pulsaciones
+	Escribir "Usuario, ingrese su edad:";
+	Leer edad;
+	formula<-(220-edad)/10;
+	Escribir "El numero de pulsaciones de corazón que debería tener por cada 10 segundos de ejercicio es de:",formula;
+	
+FinProceso

@@ -1,0 +1,14 @@
+Proceso precio_vehiculo
+	Escribir "Ingresar precio del vehículo: ";
+	Leer precio;
+	
+	ganancia_vendedor<-(8*precio)/100;
+	impuesto_local<-(3*precio)/100;
+	impuesto_estatal<-(3*precio)/100;
+	
+	dinero_extra<-ganancia_vendedor+impuesto_estatal+impuesto_local;
+	
+	costo<-precio+dinero_extra;
+	
+	Escribir "El costo total del vehículo es de: $",costo;
+FinProceso

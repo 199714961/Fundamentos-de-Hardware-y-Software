@@ -1,0 +1,19 @@
+Proceso Tres_numeros
+	Escribir "Ingrese primer numero:";
+	Leer Primero;
+	Escribir "Ingrese segundo numero";
+	Leer Segund;
+	Escribir "Ingrese el tercer numero:";
+	Leer Tercero;
+	promedio<-(Primero+Segund+Tercero)/3;
+	Suma<-Primero+Segund+Tercero;
+	Doble<-Primero*2;
+	Triple<-Segund*3;
+	Cuadrado<-Tercero*Tercero;
+	Escribir "El promedio entre los numeros es:",promedio;
+	Escribir "La suma entre sus numeros es:",Suma;
+	Escribir "El doble del primer numero es:",Doble;
+	Escribir "El triple del segundo numero es:",Triple;
+	Escribir "El tercer numero al cuadrado es:",Cuadrado;
+	
+FinProceso

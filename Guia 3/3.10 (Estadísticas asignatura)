@@ -1,0 +1,39 @@
+Proceso estadisticas_asignatura
+	Escribir "Ingrese cantidad de alumnos:";
+	Leer n;
+	cont_reprobados<-0;
+	cont_aprobados<-0;
+	cont_notables<-0;
+	cont_sobresalientes<-0;
+	
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese promedio: ";
+		Leer promedio;
+		Si promedio<4 Entonces
+			cont_reprobados<-cont_reprobados+1;
+		SiNo
+			Si promedio>=4 y promedio<5.5 Entonces
+				cont_aprobados<-cont_aprobados+1;
+			SiNo
+				Si promedio>=5.5 y promedio<6 Entonces
+					cont_notables<-cont_notables+1;
+				SiNo
+					Si promedio>=6 Entonces
+						cont_sobresalientes<-cont_sobresalientes+1;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+	
+	reprobados<-(cont_reprobados/n)*100;
+	notables<-(cont_notables/n)*100;
+	sobresalientes<-(cont_sobresalientes/n)*100;
+	aprobados<-((cont_aprobados/n)*100)+notables+sobresalientes;
+	
+	Escribir "El procentaje de reprobación del curso fue de : %",reprobados;
+	Escribir "El porcentaje de aprobación fue de: %",aprobados;
+	Escribir "El porcentaje de alumnos notables fue de: %", notables;
+	Escribir "El porcentaje de alumnos sobresalientes fue de: %",sobresalientes;
+	
+FinProceso
