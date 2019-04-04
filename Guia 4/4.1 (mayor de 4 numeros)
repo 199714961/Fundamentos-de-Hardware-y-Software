@@ -1,0 +1,11 @@
+Proceso Mayor_4_num
+	ma<-0;
+	Para num<-1 Hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese número:";
+		Leer nu;
+		Si nu>=ma Entonces
+			ma<-nu;
+		FinSi
+	FinPara
+	Escribir "Su numero mayor es:",ma;
+FinProceso

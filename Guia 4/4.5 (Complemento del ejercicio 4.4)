@@ -1,0 +1,99 @@
+Proceso Sueldo_trabajador
+	Escribir "Ingrese número de sueldos a evaluar:";
+	Leer ns;
+	Para n<-1 Hasta ns Con Paso 1 Hacer
+		sueldo_base<-0;
+		Escribir "Ingrese grado (1) (2) (3): ";
+		Leer grado;
+		Si grado==1 Entonces
+			sueldo_base<-450000;
+		SiNo
+			Si grado==2 Entonces
+				sueldo_base<-550000;
+			SiNo
+				Si grado==3 Entonces
+					sueldo_base<-700000;
+				FinSi
+			FinSi
+		FinSi
+		
+		Escribir "Ingrese horas trabajadas: ";
+		Leer horas_trabajadas;
+		
+		horas_extra<-0;
+		dinero_extra<-0;
+		
+		Si horas_trabajadas>40 Entonces
+			horas_extra<-horas_trabajadas-40;
+		FinSi
+		Si horas_extra>=1 y horas_extra<=3 Entonces
+			dinero_extra<-horas_extra*2000;
+		SiNo
+			Si horas_extra>=4 y horas_extra<=7 Entonces
+				dinero_extra<-horas_extra*3000;
+			SiNo
+				Si horas_extra>7 Entonces
+					dinero_extra<-horas_extra*3500;
+				FinSi
+			FinSi
+		FinSi
+		
+		sueldo_total<-sueldo_base+dinero_extra;
+		
+		Escribir "(1)Colmena";
+		Escribir "(2) Ban médica";
+		Escribir "(3) Vida 3";
+		Escribir "(4) Fonasa";
+		Escribir "Ingrese el número correspondiente a su ISAPRE:";
+		Leer num_isapre;
+		
+		porcIsapre<-0;
+		Si num_isapre==1 Entonces
+			porcIsapre<-6.5;
+		FinSi
+		Si num_isapre==2 Entonces
+			porcIsapre<-7.3;
+		FinSi
+		Si num_isapre==3 Entonces
+			porcIsapre<-7;
+		FinSi
+		Si num_isapre==4 Entonces
+			porcIsapre<-7;
+		FinSi
+		
+		
+		Escribir "(1)BanSantander";
+		Escribir "(2)Geometrica SA";
+		Escribir "(3)Cumprum";
+		Escribir "(4)Provida";
+		Escribir "Ingrese el número correspondiente a su banco afiliado a su AFP:";
+		Leer num_afp;
+		porcAfp<-0;
+		
+		Si num_afp==1 Entonces
+			porcAfp<-12;
+		FinSi
+		Si num_afp==2 Entonces
+			porcAfp<-13.4;
+		FinSi
+		Si num_afp==3 Entonces
+			porcAfp<-12.3;
+		FinSi
+		Si num_afp==4 Entonces
+			porcAfp<-12.9;
+		FinSi
+		
+		//Los siguientes 4 "escribir" los usé de centinela para ver como iban los cálculos de las variables.
+		Escribir porcIsapre+porcAfp;
+		Escribir (porcIsapre+porcAfp)*sueldo_total;
+		porcDesc<-(porcIsapre+porcAfp)*sueldo_total/100;
+		
+		Escribir "variable sueldo_total es;",sueldo_total;
+		Escribir "variable porcDesc es:",porcDesc;
+		
+		sueldo_real<-sueldo_total-porcDesc;
+		Escribir "Su sueldo liquido es de: $",sueldo_real;
+	FinPara
+	
+FinProceso
+

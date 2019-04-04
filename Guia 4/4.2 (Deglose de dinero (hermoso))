@@ -1,0 +1,86 @@
+Proceso Deglose_dinero
+	Escribir "Ingrese dinero sin puntos ni símbolos:";
+	Leer dinero;
+	cont20k<-0;
+	cont10k<-0;
+	cont5k<-0;
+	cont2k<-0;
+	cont1k<-0;
+	cont500<-0;
+	cont100<-0;
+	cont50<-0;
+	cont10<-0;
+	cont5<-0;
+	cont1<-0;
+	Mientras dinero!=0 Hacer
+		Si dinero>=20000 Entonces
+			cont20k<-cont20k+1;
+			dinero<-dinero-20000;
+		SiNo
+			Si dinero>=10000 Entonces
+				cont10k<-cont10k+1;
+				dinero<-dinero-10000;
+			SiNo
+				Si dinero>=5000 Entonces
+					cont5k<-cont5k+1;
+					dinero<-dinero-5000;
+				SiNo
+					Si dinero>=2000 Entonces
+						cont2k<-cont2k+1;
+						dinero<-dinero-2000;
+					SiNo
+						Si dinero>=1000 Entonces
+							cont1k<-cont1k+1;
+							dinero<-dinero-1000;
+						SiNo
+							Si dinero>=500 Entonces
+								cont500<-cont500+1;
+								dinero<-dinero-500;
+							SiNo
+								Si dinero>=100 Entonces
+									cont100<-cont100+1;
+									dinero<-dinero-100;
+								SiNo
+									Si dinero>=50 Entonces
+										cont50<-cont50+1;
+										dinero<-dinero-50;
+										
+									SiNo
+										Si dinero>=10 Entonces
+											cont10<-cont10+1;
+											dinero<-dinero-10;
+										SiNo
+											Si dinero>=5 Entonces
+												cont5<-cont5+1;
+												dinero<-dinero-5;
+												
+											SiNo
+												Si dinero>=1 Entonces
+													cont1<-cont1+1;
+													dinero<-dinero-1;
+												FinSi
+											FinSi
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinMientras
+	Escribir cont20k," billetes de $20000";
+	Escribir cont10k," billetes de $10000";
+	Escribir cont5k," billetes de $5000";
+	Escribir cont2k," billetes de $2000";
+	Escribir cont1k," billetes de $1000";
+	Escribir cont500," monedas de $500";
+	Escribir cont100," monedas de $100";
+	Escribir cont50," monedas de $50";
+	Escribir cont10," monedas de $10";
+	Escribir cont5," monedas de $5";
+	Escribir cont1," monedas de $1";
+	
+	
+FinProceso
